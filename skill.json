@@ -1,0 +1,38 @@
+{
+  "name": "genpark-zero-trust-terminal-session-multiplexer-streamer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Zero-trust terminal session multiplexer streamer facilitating E2E encrypted collaborative shell pair-programming and asciinema replays.",
+  "author": "genpark",
+  "category": "developer-tooling",
+  "tags": [
+    "share-terminal",
+    "terminal-multiplexer",
+    "webrtc-e2e",
+    "asciinema-streamer",
+    "collaborative-shell"
+  ],
+  "inputs": {
+    "host_hostname": {
+      "type": "string"
+    },
+    "participant_permission_role": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "session_stream_id": {
+      "type": "string"
+    },
+    "p2p_webrtc_e2e_encrypted": {
+      "type": "boolean"
+    },
+    "secure_share_webrtc_endpoint_url": {
+      "type": "string"
+    },
+    "session_cast_replay_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
